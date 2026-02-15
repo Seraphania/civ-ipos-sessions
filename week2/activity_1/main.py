@@ -1,12 +1,11 @@
-# a basic import
-
-
-def greet(name):
-    print(name)
+from src.greeter import greet
+from src.student import Student
 
 def main():
-    # gt('John')
-    # student = ""
+    greet('John')
+    student1 = Student("Sera", '1234567', ["IPOS", "Ethics", "Mobile Dev"], "1 Street st, somewhere")
+    
+    greet(student1.name)
 
 
 if __name__ == '__main__':
